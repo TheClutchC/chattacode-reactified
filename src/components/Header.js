@@ -12,18 +12,17 @@ import {
 
 const Header = () => {
     const [collapsed, setCollapsed] = useState(true);
-
     const toggleNavbar = () => setCollapsed(!collapsed);
 
     return (
         <div>
-            <Navbar className="bg-dark sticky-top" dark>
-                <NavbarBrand href="/" className="m-auto">
+            <Navbar color="dark" sticky="top" expand="md" dark>
+                <NavbarBrand href="/" className="me-auto">
                     <h1>chattaCode initiaTive</h1>
-                    <h4 className="text-info">open to anyone. built for everyone.</h4>
+                    <h5 className="text-info">open to anyone. built for everyone.</h5>
                 </NavbarBrand>
                 <NavbarToggler onClick={toggleNavbar} className="me-2" />
-                <Collapse isOpen={!collapsed} navbar>
+                <Collapse isOpen={!collapsed} navbar className="justify-content-end">
                     <Nav navbar>
                         <NavItem>
                             <NavLink href="/">
@@ -58,8 +57,8 @@ const Header = () => {
                     </Nav>
                 </Collapse>
             </Navbar>
-    </div>
-  );
+        </div>
+    );
 }
 
 export default Header;
