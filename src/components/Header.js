@@ -1,50 +1,65 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { 
         Navbar,
         NavbarBrand,
         Collapse,
         NavbarToggler,
         Nav,
-        NavItem
+        NavItem,
+        NavLink
  } from "reactstrap";
-import { NavLink } from "react-router-dom";
+// import { NavLink } from "react-router-dom";
 
 const Header = () => {
-    const [menuOpen, setMenuOpen] = useState(false)
+    const [collapsed, setCollapsed] = useState(true);
+
+    const toggleNavbar = () => setCollapsed(!collapsed);
 
     return (
-        <Navbar dark color='primary' sticky='top' expand='md'>
-            <NavbarBrand href='/' className="ms-5">
-                <h1 className="mt-1">chattaCode initiaTive</h1>
-            </NavbarBrand>
-
-            <NavbarToggler onClick={() => setMenuOpen(!menuOpen)}/>
-            <Collapse  isOpen={menuOpen} navbar>
-                <Nav className="ms-auto" navbar>
-                    <NavItem>
-                        <NavLink className="nav-link" to="/">
-                            <i className="fa fa-home fa-lg" /> Home
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink className="nav-link" to="/directory">
-                            <i className="fa fa-list fa-lg" /> Directory
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink className="nav-link" to="/about">
-                            <i className="fa fa-info fa-lg" /> About
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                        <NavLink className="nav-link" to="/contact">
-                            <i className="fa fa-address-card fa-lg" /> Contact
-                        </NavLink>
-                    </NavItem>
-                </Nav>
-            </Collapse>
-        </Navbar>
-    );
+        <div>
+            <Navbar className="bg-dark sticky-top" dark>
+                <NavbarBrand href="/" className="m-auto">
+                    <h1>chattaCode initiaTive</h1>
+                    <h4 className="text-info">open to anyone. built for everyone.</h4>
+                </NavbarBrand>
+                <NavbarToggler onClick={toggleNavbar} className="me-2" />
+                <Collapse isOpen={!collapsed} navbar>
+                    <Nav navbar>
+                        <NavItem>
+                            <NavLink href="/">
+                                Home
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="/about/">
+                                About
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="/events/">
+                                Events
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="/connect/">
+                                Connect
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="/blog/">
+                                Blog
+                            </NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink href="/projects/">
+                                Projects
+                            </NavLink>
+                        </NavItem>
+                    </Nav>
+                </Collapse>
+            </Navbar>
+    </div>
+  );
 }
 
 export default Header;
