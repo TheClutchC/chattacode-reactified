@@ -8,7 +8,7 @@ import {
         NavItem,
         NavLink
  } from "reactstrap";
-// import { NavLink } from "react-router-dom";
+ import { NavLink as RRNavLink } from "react-router-dom";
 
 const Header = () => {
     const [collapsed, setCollapsed] = useState(true);
@@ -17,41 +17,55 @@ const Header = () => {
     return (
         <div>
             <Navbar color="dark" sticky="top" expand="md" dark>
-                <NavbarBrand href="/" className="me-auto">
-                    <h1>chattaCode initiaTive</h1>
-                    <h5 className="text-info">open to anyone. built for everyone.</h5>
+                <NavbarBrand className="me-auto">
+                    <RRNavLink to="/">
+                        <h1>chattaCode initiaTive</h1>
+                        <h5 className="text-info">open to anyone. built for everyone.</h5>
+                    </RRNavLink>
                 </NavbarBrand>
                 <NavbarToggler onClick={toggleNavbar} className="me-2" />
                 <Collapse isOpen={!collapsed} navbar className="justify-content-end">
                     <Nav navbar>
                         <NavItem>
-                            <NavLink href="/">
-                                Home
+                            <NavLink>
+                                <RRNavLink to="/">
+                                    Home
+                                </RRNavLink>
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/about/">
-                                About
+                            <NavLink>
+                                <RRNavLink to="/about">
+                                    About
+                                </RRNavLink>
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/events/">
-                                Events
+                            <NavLink>
+                                <RRNavLink to="/events">
+                                    Events
+                                </RRNavLink>
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/connect/">
-                                Connect
+                            <NavLink>
+                                <RRNavLink to="/connect">
+                                    Connect
+                                </RRNavLink>
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/blog/">
-                                Blog
+                            <NavLink>
+                                <RRNavLink to="/blog">
+                                    Blog
+                                </RRNavLink>
                             </NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="/projects/">
-                                Projects
+                            <NavLink>
+                                <RRNavLink to="/projects">
+                                    Projects
+                                </RRNavLink>
                             </NavLink>
                         </NavItem>
                     </Nav>
