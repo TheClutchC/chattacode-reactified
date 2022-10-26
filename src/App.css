@@ -1,3 +1,7 @@
 .App {
   text-align: center;
 }
+
+.nav-link.active {
+  background-color: #1f8c76 !important;
+}

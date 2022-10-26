@@ -1,6 +1,6 @@
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
-import Header from './components/Header';
+import NavBar from './components/NavBar';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import EventsPage from './pages/EventsPage';
@@ -11,7 +11,7 @@ import ProjectsPage from './pages/ProjectsPage';
 function App() {
   return (
       <div className="App">
-        <Header />
+        <NavBar />
         <div>
           <Routes>
             <Route path='/' element={<HomePage />} />
