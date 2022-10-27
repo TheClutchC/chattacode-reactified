@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/chattacode-reactified/static/css/main.064f1f96.css",
-    "main.js": "/chattacode-reactified/static/js/main.3a4a5cf8.js",
+    "main.css": "/chattacode-reactified/static/css/main.a9f5cb0c.css",
+    "main.js": "/chattacode-reactified/static/js/main.991cea98.js",
     "index.html": "/chattacode-reactified/index.html",
-    "main.064f1f96.css.map": "/chattacode-reactified/static/css/main.064f1f96.css.map",
-    "main.3a4a5cf8.js.map": "/chattacode-reactified/static/js/main.3a4a5cf8.js.map"
+    "main.a9f5cb0c.css.map": "/chattacode-reactified/static/css/main.a9f5cb0c.css.map",
+    "main.991cea98.js.map": "/chattacode-reactified/static/js/main.991cea98.js.map"
   },
   "entrypoints": [
-    "static/css/main.064f1f96.css",
-    "static/js/main.3a4a5cf8.js"
+    "static/css/main.a9f5cb0c.css",
+    "static/js/main.991cea98.js"
   ]
 }
