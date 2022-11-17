@@ -6,7 +6,7 @@ import {
     AccordionItem,
 } from 'reactstrap';
 
-function AboutPageAccordion(props) {
+const AboutPageAccordion = (props) => {
     const [open, setOpen] = useState('1');
     const toggle = (id) => {
         if (open === id) {
