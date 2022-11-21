@@ -5,3 +5,22 @@
 .nav-link.active {
   background-color: #2ab17fa0 !important;
 }
+
+button.accordion-button {
+  background-color: rgb(159, 156, 170);
+  color: black;
+}
+
+button.accordion-button:not(.collapsed) {
+  background-color: #2ab17fa0;
+  color: #fff;
+}
+
+button.accordion-button:active {
+  background-color: black;
+  color: #fff;
+}
+
+.accordion-button:not(.collapsed)::before {
+  color: #000;
+}
