@@ -1,18 +1,24 @@
+$bg-nav-color-mint: #2ab17fa0;
+$bg-color-mint: #0e563daa;
+
 .App {
   text-align: center;
 }
 
-.nav-link.active {
-  background-color: #2ab17fa0 !important;
+.nav-pills a.nav-link.active {
+  background-color: $bg-nav-color-mint;
+  border: .2rem solid #fff;
+  color: #fff;
 }
 
 button.accordion-button {
-  background-color: rgb(159, 156, 170);
-  color: black;
+  background-color: #c5d6d2;
+  color: #000;
+  border: .2rem solid #000;
 }
 
 button.accordion-button:not(.collapsed) {
-  background-color: #2ab17fa0;
+  background-color: $bg-color-mint;
   color: #fff;
 }
 

@@ -17,7 +17,7 @@ const NavBar = (args) => {
 			<Navbar {...args} expand="md" color="dark" dark>
 				<NavbarToggler onClick={toggle} />
 				<Collapse isOpen={isOpen} navbar>
-					<Nav navbar className="bg-gradient nav-pills col m-2" justified>
+					<Nav navbar className="bg-gradient rounded nav-pills col m-2" justified>
 						<NavItem>
 							<NavLink to="/" className="nav-link" end>
 								Home

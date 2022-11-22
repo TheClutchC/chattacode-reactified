@@ -4,6 +4,13 @@ import {
     AccordionBody,
     AccordionHeader,
     AccordionItem,
+    Container,
+    Card,
+    CardBody,
+    CardTitle,
+    CardText,
+    CardSubtitle,
+    CardHeader
 } from 'reactstrap';
 
 const AboutPageAccordion = (props) => {
@@ -40,7 +47,48 @@ const AboutPageAccordion = (props) => {
 					<strong>Why Does It Matter?</strong>
 				</AccordionHeader>
                 <AccordionBody accordionId="3">
-                	Currently, Tennessee State University Report on Market-Based Displacement on Communities of Color in Chattanooga and the Urban League of Greater Chattanooga: State of Black Chattanooga Inaugural Report and the Bureau of Labor Statistics on Current Tech Demographics and the Stack Overflow Annual Developer Survey.
+                    <Container>
+                        <Card>
+                            <CardHeader 
+                                tag="h2" 
+                                className='bg-dark text-light'
+                            >
+                                Current Statistics
+                            </CardHeader>
+                            <CardTitle 
+                                tag="h4" 
+                                className='bg-secondary'
+                            >
+                                For Chattanooga
+                            </CardTitle>
+                            <Container>
+                                <ul>
+                                    <li>
+                                        <a href='https://www.chattaction.org/negro-removal-2019.html'>
+                                            Tennessee State University Report on Market-Based Displacement on Communities of Color in Chattanooga
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href='https://www.ulchatt.net/_files/ugd/109e62_9589ecf7d3464aefaa8fe458a4da782c.pdf'>
+                                            Urban League of Greater Chattanooga: State of Black Chattanooga Inaugural Report
+                                        </a>
+                                    </li>
+                                </ul>
+                            </Container>
+                        </Card>
+                        <Card color='dark' inverse><h4>For Overall Techscape</h4></Card>
+                        <Container>
+                            <ul>
+                                <li>
+                                    Bureau of Labor Statistics on Current Tech Demographics
+                                </li>
+                                <li>
+                                    <a href='https://survey.stackoverflow.co/2022/'>Stack Overflow Annual Developer Survey
+                                    </a>
+                                </li>
+                            </ul>
+                        </Container>
+                    </Container>
                 </AccordionBody>
             </AccordionItem>
             <AccordionItem>
@@ -48,7 +96,7 @@ const AboutPageAccordion = (props) => {
 					<strong>Implementation</strong>
 				</AccordionHeader>
                 <AccordionBody accordionId="4">
-					chattaCode initiaTive lorem ipsum dolor sit amet consectetur adipisicing elit. Ut est consequuntur velit, optio earum, harum qui unde at aliquid quod quam voluptatibus aliquam illum cum sit autem error quia voluptatem, dolores quis repellat. Sed minus necessitatibus porro quaerat reiciendis dignissimos dolor eum culpa quia labore eaque at ullam alias iure minima incidunt, dolore sequi soluta commodi excepturi ad omnis illo!
+					The overarching goal of chattaCode is to put into practice suggestions provided by Urban League of Chattanooga and other similar organizations to improve the economic opportunities and resources for the people of Chattanooga and beyond that are underrepresented in the tech field.
                 </AccordionBody>
             </AccordionItem>
             </Accordion>
