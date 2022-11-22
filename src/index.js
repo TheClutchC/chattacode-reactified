@@ -11,6 +11,12 @@ import './App.scss';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter basename='/chattacode-reactified'>
+        <Link to="/"/>
+        <Link to="/about"/>
+        <Link to="/events"/>
+        <Link to="/connect"/>
+        <Link to="/blog"/>
+        <Link to="/projects"/>
         <App />
     </BrowserRouter>
 );
