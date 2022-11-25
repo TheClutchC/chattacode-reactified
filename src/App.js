@@ -10,17 +10,17 @@ import ProjectsPage from './pages/ProjectsPage';
 
 function App() {
   return (
-    <BrowserRouter basename='/chattacode-reactified'>
+    <BrowserRouter basename='/'>
       <div className="App">
         <NavBar />
         <div>
           <Routes>
-            <Route path='/' element={<HomePage />} />
-            <Route path='/about' element={<AboutPage />} />
-            <Route path='/events' element={<EventsPage />} />
-            <Route path='/connect' element={<ConnectPage />} />
-            <Route path='/blog' element={<BlogPage />} />
-            <Route path='/projects' element={<ProjectsPage />} />
+            <Route exact path='/about' element={<AboutPage />} />
+            <Route exact path='/events' element={<EventsPage />} />
+            <Route exact path='/connect' element={<ConnectPage />} />
+            <Route exact path='/blog' element={<BlogPage />} />
+            <Route exact path='/projects' element={<ProjectsPage />} />
+            <Route exact path='/' element={<HomePage />} />
           </Routes>
         </div>
       </div>
