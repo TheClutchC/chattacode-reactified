@@ -10,12 +10,12 @@
     {
       "src": "chattacode.png",
       "type": "image/png",
-      "sizes": "192x192"
+      "sizes": "16x16"
     },
     {
       "src": "chattacode.png",
       "type": "image/png",
-      "sizes": "512x512"
+      "sizes": "16x16"
     }
   ],
   "start_url": ".",

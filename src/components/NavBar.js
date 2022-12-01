@@ -15,6 +15,15 @@ const NavBar = (args) => {
    return (
 		<div>
 			<Navbar {...args} expand="md" color="dark" dark>
+				<h1 style={{ 
+						color: "#fff", 
+						textDecoration: "underline wavy #fff",
+						backgroundImage: "radial-gradient( #fff, 7%, #000 )",
+						marginTop: 4
+					}}
+				>
+				ChattaCode
+				</h1>
 				<NavbarToggler onClick={toggle} />
 				<Collapse isOpen={isOpen} navbar>
 					<Nav navbar className="bg-gradient rounded nav-pills col m-2" justified>
