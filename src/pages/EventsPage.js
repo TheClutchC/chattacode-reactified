@@ -1,12 +1,13 @@
 import React from "react";
-import { Container } from "reactstrap";
+import { Events } from "../features/events/Events";
 
 const EventsPage = () => {
     return (
-        <Container>
+        <div>
             <h1 style={{ color: "orange" }}>Events Page</h1>
             <h4>Currently only in-person workshops:</h4>
-        </Container>
+            <Events />
+        </div>
     );
 };
 

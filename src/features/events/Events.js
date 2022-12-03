@@ -1,7 +1,6 @@
 import React from "react";
 
-const Events = () => {
-
+export const Events = () => {
     const data = () => [
         {
             id: 0,
@@ -106,5 +105,3 @@ const Events = () => {
     )
 
 }
-
-export default Events;
