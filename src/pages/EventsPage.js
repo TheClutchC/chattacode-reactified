@@ -1,5 +1,5 @@
 import React from "react";
-import { Events } from "../features/events/Events";
+import Events from "../features/events/Events";
 
 const EventsPage = () => {
     return (
