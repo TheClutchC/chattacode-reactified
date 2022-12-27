@@ -9,7 +9,8 @@ export const eventsData = [
         description: "",
         stack: "",
         inPerson: true,
-        image: ""
+        isVirtual: false,
+        image: "src/app/img/colin-watts-_rt4VIG9rDQ-unsplash.jpg"
     },
     {
         id: 1,
@@ -21,7 +22,8 @@ export const eventsData = [
         description: "",
         stack: "",
         inPerson: true,
-        image: ""
+        isVirtual: false,
+        image: "src/app/img/joakim-honkasalo-VSbrFf12lWE-unsplash.jpg"
     },
     {
         id: 2,
@@ -33,7 +35,8 @@ export const eventsData = [
         description: "",
         stack: "",
         inPerson: true,
-        image: ""
+        isVirtual: false,
+        image: "src/app/img/joshua-hoehne-NMq3uvIPgNU-unsplash.jpg"
     },
     {
         id: 3,
@@ -45,7 +48,8 @@ export const eventsData = [
         description: "",
         stack: "",
         inPerson: true,
-        image: ""
+        isVirtual: false,
+        image: "src/app/img/oleksandr-horbach-7JtueNIOMjM-unsplash.jpg"
     },
     {
         id: 4,
@@ -57,7 +61,8 @@ export const eventsData = [
         description: "",
         stack: "",
         inPerson: true,
-        image: ""
+        isVirtual: false,
+        image: "src/app/img/oleksandr-horbach-cMVfhqu4FEI-unsplash.jpg"
     },
     {
         id: 5,
@@ -69,7 +74,8 @@ export const eventsData = [
         description: "",
         stack: "",
         inPerson: true,
-        image: ""
+        isVirtual: false,
+        image: "src/app/img/thomas-kinto-Kj0OxaM7tes-unsplash.jpg"
     },
     {
         id: 6,
@@ -81,6 +87,7 @@ export const eventsData = [
         description: "",
         stack: "",
         inPerson: true,
-        image: ""
+        isVirtual: false,
+        image: "src/app/img/tigran-kharatyan-WGFmrSjJOKU-unsplash.jpg"
     }
 ];

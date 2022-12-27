@@ -14,7 +14,7 @@ import { Row, Col, Card, CardTitle, CardSubtitle, CardText } from "reactstrap";
               color="dark"
               outline
             >
-              <CardTitle className="h4" style={{ color: "#fff", backgroundImage: "radial-gradient( #fff, 7%, #000 )" }} key={item.day}>
+              <CardTitle className="h4 pb-2" key={item.day}>
                 {item.day}
               </CardTitle>
               <CardSubtitle className="h6" key={item.eventName}>

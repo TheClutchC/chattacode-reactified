@@ -5,6 +5,12 @@ $bg-color-mint: #136748c4;
   text-align: center;
 }
 
+.card-title {
+  background-color: $bg-color-mint;
+  color: #fff;
+  border: .2rem solid #000;
+}
+
 .nav-pills a.nav-link.active {
   background-color: $bg-nav-color-mint;
   border: .2rem solid #fff;
