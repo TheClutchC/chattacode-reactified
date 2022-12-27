@@ -8,7 +8,8 @@ export const eventsData = [
         location: "",
         description: "",
         stack: "",
-        inPerson: true
+        inPerson: true,
+        image: ""
     },
     {
         id: 1,
@@ -19,7 +20,8 @@ export const eventsData = [
         location: "",
         description: "",
         stack: "",
-        inPerson: true
+        inPerson: true,
+        image: ""
     },
     {
         id: 2,
@@ -30,7 +32,8 @@ export const eventsData = [
         location: "",
         description: "",
         stack: "",
-        inPerson: true
+        inPerson: true,
+        image: ""
     },
     {
         id: 3,
@@ -41,7 +44,8 @@ export const eventsData = [
         location: "",
         description: "",
         stack: "",
-        inPerson: true
+        inPerson: true,
+        image: ""
     },
     {
         id: 4,
@@ -52,7 +56,8 @@ export const eventsData = [
         location: "",
         description: "",
         stack: "",
-        inPerson: true
+        inPerson: true,
+        image: ""
     },
     {
         id: 5,
@@ -63,7 +68,8 @@ export const eventsData = [
         location: "",
         description: "",
         stack: "",
-        inPerson: true
+        inPerson: true,
+        image: ""
     },
     {
         id: 6,
@@ -74,6 +80,7 @@ export const eventsData = [
         location: "",
         description: "",
         stack: "",
-        inPerson: true
+        inPerson: true,
+        image: ""
     }
 ];

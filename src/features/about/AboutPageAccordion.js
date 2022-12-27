@@ -29,7 +29,7 @@ const AboutPageAccordion = (props) => {
                     <strong>Mission Statement</strong>
                 </AccordionHeader>
                 <AccordionBody accordionId="1">
-                    chattaCode strives to build equity in our local developer community and beyond by prioritizing the active elimination of barriers for entry into web development for Chattanooga's underrepresented communities.
+                    ChattaCode strives to build equity in our local developer community and beyond by prioritizing the active elimination of barriers for entry into web development for Chattanooga's underrepresented communities.
                 </AccordionBody>
             </AccordionItem>
             <AccordionItem>
@@ -37,7 +37,7 @@ const AboutPageAccordion = (props) => {
                     <strong>About Us</strong>
                 </AccordionHeader>
                 <AccordionBody accordionId="2">
-                    chattaCode initiaTive is a developer community created in 2022 for the purpose of providing equitable access to educational resources and career development opportunities for underrepresented communities in Chattanooga.
+                    ChattaCode is a developer community created in 2022 for the purpose of providing equitable access to educational resources and career development opportunities for underrepresented communities in the city of Chattanooga, Tennessee.
                 </AccordionBody>
             </AccordionItem>
             <AccordionItem>
@@ -48,8 +48,9 @@ const AboutPageAccordion = (props) => {
                     <>
                         <Card>
                             <CardTitle 
-                                tag="h2" 
-                                className='bg-dark text-light'
+                                tag="h3" 
+                                className='text-center'
+                                style={{ color: "#fff", backgroundImage: "radial-gradient( #fff, 7%, #000 )" }}
                             >
                                 Current Statistics
                             </CardTitle>
@@ -58,7 +59,8 @@ const AboutPageAccordion = (props) => {
                             </CardText>
                             <CardSubtitle 
                                 tag="h4" 
-                                className='bg-secondary'
+                                className='text-center'
+                                style={{ color: "#fff", backgroundImage: "radial-gradient( #fff, 7%, #000 )" }}
                             >
                                 For Chattanooga
                             </CardSubtitle>
@@ -76,7 +78,8 @@ const AboutPageAccordion = (props) => {
                             </List>
                             <CardSubtitle 
                                 tag="h4" 
-                                className='bg-secondary'
+                                className='text-center'
+                                style={{ color: "#fff", backgroundImage: "radial-gradient( #fff, 7%, #000 )" }}
                             >
                                 For Overall Techscape
                             </CardSubtitle>
