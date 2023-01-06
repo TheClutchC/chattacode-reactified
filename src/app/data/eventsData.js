@@ -6,7 +6,7 @@ export const eventsData = [
         time: "6 p.m. - 8 p.m.",
         eventName: "Coding in the Park",
         location: "",
-        description: "",
+        description: "Booga Booga Booga Booga Booga Booga Booga Booga Booga Booga ",
         stack: "",
         inPerson: true,
         isVirtual: false,

@@ -20,9 +20,8 @@ import { Row, Col, Card, CardTitle, CardSubtitle, CardText } from "reactstrap";
               <CardSubtitle className="h6" key={item.eventName}>
                 {item.eventName}
               </CardSubtitle>
-              <CardText className="h6" key={[item.time, item.description]}>
+              <CardText className="h6" key={item.time}>
                 {item.time}
-                {item.description}
               </CardText>
             </Card>
           ))}
