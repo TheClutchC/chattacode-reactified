@@ -1,7 +1,10 @@
+import React from 'react';
 import './App.scss';
 import { HashRouter, Routes, Route } from 'react-router-dom';
+
 import NavBar from './components/NavBar';
 import Header from './components/Header';
+
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import EventsPage from './pages/EventsPage';
@@ -10,8 +13,19 @@ import BlogPage from './pages/BlogPage';
 import ProjectsPage from './pages/ProjectsPage'; 
 
 function App() {
+  const [data, setData] = React.useState(null);
+
+  React.useEffect(() => {
+    fetch("/api")
+      .then((res) => res.json())
+      .then((data) => setData(data.message));
+  }, []);
+
   return (
+    
     <HashRouter>
+      {/* This <p> tag may not be necessary */}
+      <p style={{ backgroundColor: "orange" }}>{!data ? "Loading..." : data}</p>  
       <nav>
         <NavBar />
         <Header />
