@@ -44,7 +44,7 @@ import {
                that pops up when clicked for
                 each day of the week */}
 
-              <Button key={item.day} onClick={toggle}>
+              {/* <Button key={item.day} onClick={toggle}>
                 Click here for more info about {item.day}'s meeting
               </Button>
               <Modal
@@ -64,7 +64,7 @@ import {
                 <ModalFooter>
 
                 </ModalFooter>
-              </Modal>
+              </Modal> */}
               {/* This is the end of
                the code for the modal.
                Code seems to break once 
