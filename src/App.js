@@ -4,6 +4,7 @@ import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import NavBar from './components/NavBar';
 import Header from './components/Header';
+import Footer from './components/Footer';
 
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
@@ -13,19 +14,19 @@ import BlogPage from './pages/BlogPage';
 import ProjectsPage from './pages/ProjectsPage'; 
 
 function App() {
-  const [data, setData] = React.useState(null);
+  // const [data, setData] = React.useState(null);
 
-  React.useEffect(() => {
-    fetch("/api")
-      .then((res) => res.json())
-      .then((data) => setData(data.message));
-  }, []);
+  // React.useEffect(() => {
+  //   fetch("/api")
+  //     .then((res) => res.json())
+  //     .then((data) => setData(data.message));
+  // }, []);
 
   return (
     
     <HashRouter>
       {/* This <p> tag may not be necessary */}
-      <p style={{ backgroundColor: "orange" }}>{!data ? "Loading..." : data}</p>  
+      {/* <p style={{ backgroundColor: "orange" }}>{!data ? "Loading..." : data}</p>   */}
       <nav>
         <NavBar />
         <Header />
@@ -38,6 +39,9 @@ function App() {
         <Route exact path='/projects' element={<ProjectsPage />} />
         <Route exact path='/' element={<HomePage />} />
       </Routes>
+      <footer>
+        <Footer />
+      </footer>
     </HashRouter>
   );
 }
