@@ -1,5 +1,7 @@
 import { Container, Row, Col } from "reactstrap";
 
+// Will need to import react-icons to replace fa-icons
+
 const Footer = () => {
   return (
     <Container
