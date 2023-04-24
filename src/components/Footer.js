@@ -40,14 +40,11 @@ const Footer = () => {
         </Col>
         <Col>
           <h4>Find Us</h4>
-          <a class="btn btn-dark" href="http://slack.com/">
-            <i class="fa-brands fa-2x fa-slack"></i>
+          <a class="btn btn-dark" href="http://slack.com/">Slack
           </a>
-          <a class="btn btn-dark" href="http://discord.com/">
-            <i class="fa-brands fa-2x fa-discord"></i>
+          <a class="btn btn-dark" href="http://discord.com/">Discord
           </a>
-          <a class="btn btn-dark" href="http://github.com/">
-            <i class="fa-brands fa-2x fa-github"></i>
+          <a class="btn btn-dark" href="http://github.com/">GitHub
           </a>
         </Col>
         <Col>
