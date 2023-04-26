@@ -1,10 +1,10 @@
-$bg-nav-color-mint: #2ab17fa0;
-$bg-color-mint: #136748c4;
-
+$bg-color-navy: #3a3a7c;
+$bg-blend: linear-gradient(#f4b8b8, #3a3a7c, #548e54);
+$bg-radial-blend: radial-gradient( #fff, 7%, #000 );
 
 
 body {
-  background-image: linear-gradient(#f4b8b8, #3a3a7c, #548e54);
+  background-image: $bg-blend;
 }
 
 .App {
@@ -12,20 +12,20 @@ body {
 }
 
 .card-title {
-  background-color: $bg-color-mint;
+  background-image: $bg-radial-blend;
   color: #fff;
   border: .2rem solid #000;
 }
 
 .nav-pills a.nav-link.active {
-  background-color: $bg-nav-color-mint;
+  background-color: $bg-color-navy;
   border: .2rem solid #fff;
   color: #fff;
 }
 
 button.accordion-button {
-  background-color: #c5d6d2;
-  color: #000;
+  background-image: $bg-radial-blend;
+  color: #fff;
   border: .2rem solid #000;
   height: 120px;
   font-size: large;
@@ -33,7 +33,7 @@ button.accordion-button {
 }
 
 button.accordion-button:not(.collapsed) {
-  background-color: $bg-color-mint;
+  background-image: $bg-blend;
   color: #fff;
 }
 

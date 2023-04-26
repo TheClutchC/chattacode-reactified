@@ -10,12 +10,7 @@ const AboutPage = () => {
     return (
         <Container>
             <Row>
-                <Col>
-                    <h1>About Page</h1>
-                </Col>
-            </Row>
-            <Row>
-                <Col>
+                <Col className="my-5">
                     <AboutPageAccordion />
                 </Col>
             </Row>
