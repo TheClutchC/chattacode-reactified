@@ -1,17 +1,27 @@
 import { Container, Row, Col } from "reactstrap";
+import { NavLink } from "react-router-dom";
 
-// Will need to import react-icons to replace fa-icons
+const mapLinks = [
+  'Home', 
+  'About', 
+  'Events', 
+  'Connect',
+  'Blog',
+  'Projects'
+];
 
 const Footer = () => {
+  const linkPaths = [
+    '/', 
+    '/about', 
+    '/events', 
+    '/connect', 
+    '/blog', 
+    '/projects'
+  ];
+
   return (
-    <Container
-      fluid
-      style={{
-        color: "#fff",
-        backgroundImage: "radial-gradient( #fff, 7%, #000 )",
-        textAlign: "center",
-      }}
-    >
+    <Container fluid className="text-center bg-dark text-light">
       <Row>
         <Col>
           <strong>©</strong> <em>2022-2023 ChattaCode</em>
@@ -20,46 +30,28 @@ const Footer = () => {
       <Row>
         <Col>
           <h4>Links</h4>
-          <ul class="list-unstyled">
+          <ul className="list-unstyled">
             <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="events.html">Events</a>
-            </li>
-            <li>
-              <a href="#">Connect</a>
-            </li>
-            <li>
-              <a href="blog.html">Blog</a>
-            </li>
-            <li>
-              <a href="projects.html">Projects</a>
+              {mapLinks.map((page, index) => (
+                <div key={page} className="py-1 px-4">
+                  <NavLink to={linkPaths[index]}>
+                    {page}
+                  </NavLink>
+                </div>
+              ))}
             </li>
           </ul>
         </Col>
         <Col>
           <h4>Find Us</h4>
-          <a class="btn btn-dark" href="http://slack.com/">Slack
-          </a>
-          <a class="btn btn-dark" href="http://discord.com/">Discord
-          </a>
-          <a class="btn btn-dark" href="http://github.com/">GitHub
-          </a>
+          <a className="btn btn-light mx-1" href="https://discord.com/channels/1047165567859179550/1047165567859179552">Discord</a>
+          <a className="btn btn-light mx-1" href="https://github.com/TheClutchC/chattacode-reactified">GitHub</a>
         </Col>
         <Col>
           <h4>Contact Us</h4>
-          <a role="button" class="btn btn-link" href="tel:4235550102">
-            <i class="fa fa-phone fa-lg text-primary"></i> 423-555-0102
-          </a>
+          <a role="button" className="btn btn-link" href="tel:4235550102">423-555-0102</a>
           <br />
-          <a
-            role="button"
-            class="btn btn-link"
-            href="mailto:info@chattacode.co"
-          >
-            <i class="fa fa-envelope fa-lg text-primary"></i> info@chattacode.co
-          </a>
+          <a role="button" className="btn btn-link" href="mailto:info@chattacode.co" >info@chattacode.co</a>
         </Col>
       </Row>
     </Container>
