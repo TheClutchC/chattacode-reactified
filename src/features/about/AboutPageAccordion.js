@@ -48,7 +48,7 @@ const AboutPageAccordion = (props) => {
                         <Card>
                             <CardSubtitle 
                                 tag="h3" 
-                                className='text-center'
+                                className='text-center bg-secondary'
                             >
                                 Current Statistics
                             </CardSubtitle>
@@ -57,7 +57,7 @@ const AboutPageAccordion = (props) => {
                             </CardText>
                             <CardSubtitle 
                                 tag="h6" 
-                                className='text-center'
+                                className='text-center bg-secondary'
                             >
                                 For Chattanooga
                             </CardSubtitle>
@@ -67,7 +67,7 @@ const AboutPageAccordion = (props) => {
                             </List>
                             <CardSubtitle 
                                 tag="h6" 
-                                className='text-center'
+                                className='text-center bg-secondary'
                             >
                                 For Overall Techscape
                             </CardSubtitle>

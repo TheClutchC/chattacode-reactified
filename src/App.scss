@@ -11,12 +11,6 @@ body {
   text-align: center;
 }
 
-.card-title {
-  background-image: $bg-radial-blend;
-  color: #fff;
-  border: .2rem solid #000;
-}
-
 .nav-pills a.nav-link.active {
   background-color: $bg-color-navy;
   border: .2rem solid #fff;
@@ -24,11 +18,9 @@ body {
 }
 
 button.accordion-button {
-  background-image: $bg-radial-blend;
-  color: #fff;
-  border: .2rem solid #000;
+  background-color: lightgrey;
   font-size: large;
-  font-weight: bold;
+  font-weight: 300;
 }
 
 button.accordion-button:not(.collapsed) {

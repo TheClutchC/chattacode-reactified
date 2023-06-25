@@ -30,7 +30,7 @@ import {
               color="dark"
               outline
             >
-              <CardTitle className="h4 pb-2 pt-1" key={item.day}>
+              <CardTitle className="h4 pb-2 pt-1 text-light bg-dark" key={item.day}>
                 {item.day}
               </CardTitle>
               <CardSubtitle className="h6" key={item.eventName}>
