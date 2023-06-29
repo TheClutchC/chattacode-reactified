@@ -3,8 +3,21 @@ $bg-blend: linear-gradient(#f4b8b8, #3a3a7c, #548e54);
 $bg-radial-blend: radial-gradient( #fff, 7%, #000 );
 
 
+html, body, #root {
+  min-height: 100vh;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+ }
+
 body {
   background-image: $bg-blend;
+}
+
+footer {
+  margin-top: auto;
 }
 
 .App {
