@@ -21,7 +21,7 @@ const Footer = () => {
   ];
 
   return (
-    <Container fluid className="text-center bg-dark text-light">
+    <Container fluid className="text-center bg-dark text-light footer">
       <Row>
         <Col>
           <strong>©</strong> <em>2022-2023 ChattaCode</em>
